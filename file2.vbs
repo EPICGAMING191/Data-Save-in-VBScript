@@ -1,0 +1,5 @@
+Set objFileToRead=CreateObject("Scripting.FileSystemObject").OpenTextFile("USERNAME.txt",1)
+Set passfile=CreateObject("Scripting.FileSystemObject").OpenTextFile("PASSWORD.txt",1)
+Username=objFileToRead.ReadAll()
+Password=passfile.ReadAll()
+X=MsgBox(Password,vbOkOnly,Username)
